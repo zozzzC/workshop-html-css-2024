@@ -1,8 +1,105 @@
 /* Your CSS code here: */
 
-* {
-    border: 1px solid black;
+
+h1, h2, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.main {
+    margin: auto;
+    margin-top: 10vh; 
+    width: 900px;
+    display: flex; 
+    /* since display is flex, the width of the children are now the width of their content (this can change depending on the content).*/
+     /*by default, divs will expand depending on their content. however we can give it a fixed height.*/
+    height: 700px; /*since its fixed height, the height cannot change even if we add more content*/
+    box-shadow: 1px 2px 7px 6px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+
+.left {
+    width: 280px;
+}
+
+.right {
+    width: 620px;
+}
+
+.friends-filter {
+    text-align: center;
+}
+
+.friends-filter input {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.right {  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.right img {
+    width: 170px;
+    border-radius: 50%;
+}
+
+.contact-cards {
+    height: 510px;
+    overflow: auto;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding-left: 40px;
+}
+
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.contact-card p {
+    padding-left: 50px;
+    border-bottom: 10px;
+}
+
+.add-friend {
+    margin: 0px;
+    display: flex;
+    align-items: center; 
+    padding-left: 70px;
+    background-color: rgb(114, 181, 103);
+    height: 90px;
+    border-bottom-left-radius: 10px;
+}
+
+.add-friend:hover{
+    background-color: rgb(145, 203, 136);
+}
+
+.add-friend img {
+    width: 50px;
+}
+
+.contact-card:hover{
+    background-color: rgb(136, 181, 223);
 }
 
 
 
+
+/* * { */
+    /* border: 1px solid black; /* borders can help for debugging to show the width and height of divs*/
+/* } */
